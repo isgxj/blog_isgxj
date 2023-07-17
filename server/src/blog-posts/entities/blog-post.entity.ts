@@ -39,10 +39,10 @@ export class BlogPost extends CommonEntity {
   @ManyToOne(() => BlogTag)
   tags: BlogTag;
 
-  @Column({ type: 'simple-array', default: [] })
+  @Column({ type: 'simple-array' })
   related_posts: number[];
 
-  @Column({ type: 'enum', enum: PostType, default: `" ${PostType.DRAFT} "` })
+  @Column({ type: 'enum', enum: PostType, default: PostType.DRAFT })
   status: PostType;
 
   @Column({ default: '' })

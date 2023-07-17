@@ -1,5 +1,4 @@
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { BlogUser } from '../blog-users/entities/blog-user.entity'
 
 export default TypeOrmModule.forRoot({
   type: 'mysql',
